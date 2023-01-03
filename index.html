@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <input type="text" id="number">
+    <span id="del">Del</span>
+    <div id="container">
+        <span style="color: red;" 
+        onclick="setNumValue('(')"
+        >(</span>
+        <span style="color: green;"
+              onclick="setNumValue(')')"
+        >)</span>
+        <span style="color: green;"
+              onclick="setNumValue('%')"
+        >%</span>
+        <span style="color: green;"
+              onclick="setNumValue('/')"
+        >/</span>
+        <span onclick="setNumValue('7')">7</span>
+        <span onclick="setNumValue('8')">8</span>
+        <span onclick="setNumValue('9')">9</span>
+        <span style="color: green;"
+        onclick="setNumValue('*')"
+      
+        >x</span>
+        <span onclick="setNumValue('4')">4</span>
+        <span onclick="setNumValue('5')">5</span>
+        <span onclick="setNumValue('6')">6</span>
+        <span style="color: green;"
+        onclick="setNumValue('-')"
+        >-</span>
+        <span onclick="setNumValue('1')" id="one">1</span>
+        <span onclick="setNumValue('2')">2</span>
+        <span onclick="setNumValue('3')">3</span>
+        <span onclick="setNumValue('+')">+</span>
+        <span onclick="clearNumVal()">C</span>
+        <span onclick="setNumValue('0')">0</span>
+        <span onclick="setNumValue('.')">.</span>
+        <span style="background-color: green;"
+        onclick="calcVal()"
+        >=</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
